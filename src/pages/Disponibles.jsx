@@ -8,7 +8,7 @@ const Disponibles = () => {
   return (
     <section className="px-5 mt-10">
       <h1 className="text-2xl">Libros disponibles</h1>
-      <main className="mt-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 justify-items-center">
+      <main className="mt-4 grid grid-cols-2 md:grid-cols-3 -6 gap-4 justify-items-center">
         {books &&
           books?.map((book) => (
             <article className=" w-52" key={book.ISBN}>

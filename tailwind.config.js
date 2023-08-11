@@ -5,9 +5,7 @@ export default {
     extend: {
       colors: {
         gris: "#3f3f3c",
-        rosa: "#ffb9b8",
-        verde: "#41c0ab",
-        salmon: "#f3b998",
+        rosa: "#ffb9b8"
       }
     },
   },
