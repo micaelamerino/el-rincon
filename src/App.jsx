@@ -1,6 +1,7 @@
 import Filtros from "./components/Filtros";
 import Header from "./components/Header";
 import Disponibles from "./pages/Disponibles";
+import Lista from "./pages/Lista";
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <Header/>
       <Filtros/>
       <Disponibles/>
+      <Lista/>
     </>
   );
 }

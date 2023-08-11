@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Context } from "../context/Context";
-import { HeartIcon } from "../components/Icons";
+import AddButton from "../components/AddButton";
 
 const Disponibles = () => {
   const { books } = useContext(Context);
@@ -19,9 +19,7 @@ const Disponibles = () => {
                   loading="lazy"
                   className="w-full h-full object-cover rounded-t-md"
                 />
-                <span className="absolute right-0 top-0 bg-rosa p-1 cursor-pointer rounded-tr">
-                  <HeartIcon />
-                </span>
+                <AddButton book={book}/>
               </div>
 
               <div className="flex flex-col flex-wrap content-center gap-1 mt-1">

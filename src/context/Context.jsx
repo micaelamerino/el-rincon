@@ -7,6 +7,7 @@ export const DataContext = ({ children }) => {
     const [data, setData] = useState([]);
     const [error, setError] = useState("");
     const [books, setBooks] = useState([]);
+    const [list, setList] = useState([]);
     
 
     useEffect(() => {
@@ -26,9 +27,13 @@ export const DataContext = ({ children }) => {
         getData();
       }, []);
 
+      const addBook = (book) => {
+        setList([...list, book]) 
+      }
+
     return (
         <Context.Provider
-        value={{ books, setBooks, data, error }}>
+        value={{ books, setBooks, data, error, addBook, list }}>
             { children }
         </Context.Provider>
     )
