@@ -25,10 +25,10 @@ const Lista = () => {
       ))}
     </main>
   ) : (
-    <div className="pl-10 mt-5">
+    <div className="mt-5 flex flex-col items-center">
       <h3>Oooops!</h3>
       <p>Aún no hay libros en su lista de lectura</p>
-      <div className="w-56 h-40">
+      <div className="w-56">
         <img src={ositogif} />
       </div>
     </div>

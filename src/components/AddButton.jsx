@@ -35,7 +35,7 @@ const AddButton = ({ book }) => {
   return (
     <button
       onClick={() => handleClick(book)}
-      className="absolute right-0 top-0 bg-rosa hover:bg-gris hover:duration-500 p-2 rounded-tr rounded-bl"
+      className="absolute right-0 top-0 p-2 rounded-tr rounded-bl bg-rosa hover:p-3 hover:duration-300 "
     >
       <HeartIcon />
     </button>
