@@ -29,7 +29,7 @@ const Lista = () => {
       <h3>Oooops!</h3>
       <p>Aún no hay libros en su lista de lectura</p>
       <div className="w-56">
-        <img src={ositogif} />
+        <img src={ositogif} alt="Imágen animada de un osito indicando que la lista de libros está vacía" />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 export const Context = createContext();
 
@@ -6,7 +7,7 @@ export const DataContext = ({ children }) => {
   const [data, setData] = useState([]);
   const [error, setError] = useState("");
   const [books, setBooks] = useState([]);
-  const [list, setList] = useState([]);
+  const [list, setList] = useLocalStorage("list", []);
 
   useEffect(() => {
     const getData = async () => {
@@ -18,7 +19,7 @@ export const DataContext = ({ children }) => {
         setBooks(info.library.map((b) => b.book));
       } catch (error) {
         setError(
-          "Ops! No se encontró la información solicitada, vuelva a intentar en un instante"
+          " No fue posible encontrar la información solicitada, pruebe salir de la aplicación y volver a ingresar."
         );
       }
     };
