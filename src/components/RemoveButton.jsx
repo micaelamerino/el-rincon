@@ -9,7 +9,7 @@ const RemoveButton = ({ book }) => {
     const searchBook = list.find((b) => b.ISBN === book.ISBN);
     const newArray = list.filter((b) => b !== searchBook);
     setList(newArray);
-    toast.success("Eliminado de la lista!", {
+    toast.error("Eliminado de la lista!", {
       position: "top-right",
       autoClose: 1500,
       hideProgressBar: true,

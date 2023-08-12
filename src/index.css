@@ -14,3 +14,7 @@ select {
     font-display: swap;
     font-weight:600;
 }
+
+.activo {
+   border-bottom: 1px solid #ffb9b8;
+}
