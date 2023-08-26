@@ -4,21 +4,13 @@ import { SearchIcon } from "./Icons";
 import { useEffect } from "react";
 
 const Filtros = () => {
-  const { data, setBooks, books } = useContext(Context);
+  const { data, setBooks } = useContext(Context);
   const [search, setSearch] = useState("");
   const [message, setMessage] = useState("");
-  let pages = []
-
-  useEffect(()=>{
-    books.forEach(element => {
-      pages.push(element.pages)
-      
-    });
-  }, [books, pages])
 
   const [filter, setFilter] = useState({
-    minPages: Math.min(...pages),
-    maxPages: Math.max(...pages),
+    minPages: 43,
+    maxPages: 1200,
     category: "Todos",
   });
 
