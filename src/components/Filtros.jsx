@@ -12,8 +12,9 @@ const Filtros = () => {
     minPages: 43,
     maxPages: 1200,
     category: "Todos",
+    
   });
-
+  console.log(filter)
   /*Filtro por buscador */
   const handleChange = (e) => {
     setSearch(e.target.value);

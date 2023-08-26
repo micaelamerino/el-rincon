@@ -18,9 +18,11 @@ export const DataContext = ({ children }) => {
         setData(info.library.map((b) => b.book));
         setBooks(info.library.map((b) => b.book));
       } catch (error) {
-        setError(
-          " No fue posible encontrar la información solicitada, pruebe salir de la aplicación y volver a ingresar."
-        );
+        if (error) {
+          setError(
+            " No fue posible encontrar la información solicitada, pruebe salir de la aplicación y volver a ingresar."
+          )
+        }
       }
     };
     getData();

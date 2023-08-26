@@ -12,9 +12,8 @@ const Routing = () => {
           <Route index element={<Disponibles />} />
           <Route path="/disponibles" element={<Disponibles />} />
           <Route path="/listado" element={<Lista />} />
-          
+          <Route path="*" element={<Error404/>}/>
         </Route>
-        <Route path="*" element={<Error404/>}/>
       </Routes>
     </BrowserRouter>
   );
